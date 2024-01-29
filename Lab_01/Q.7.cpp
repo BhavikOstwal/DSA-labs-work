@@ -1,21 +1,22 @@
 #include<iostream>
 using namespace std;
 
-char tmp;
 
 void split(const string& myString){
     char char_arr[myString.length()];
     char word_array[2];
+    int t = 0;
     for (int i = 0; i < myString.length(); i++){
         char_arr[i] = myString[i];
-        if (myString[i]==' '){
-            // how to make an char array which can contain words
-        }
+        // if (myString[i]==' '){
+        //     word_array[i] = char_arr[i];
+        //     t=i;
+        // }
     }
 
     // Printing the character array
     for (char a : myString){
-        
+        cout<<a<<"-";
     }
     cout<<"\n";
 }
