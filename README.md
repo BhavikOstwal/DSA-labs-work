@@ -1,1 +1,1 @@
-## This repo has my 'Data Structures And Algorithms' Lab works
+## 'Data Structures And Algorithms' Lab works
