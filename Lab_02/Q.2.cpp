@@ -39,11 +39,11 @@ void merge_sort(int A[], int p, int r){
 }
 
 int main(){
-	int A[] = {12, 11, 13, 5, 6};
-    merge_sort(A, 0, 4);
+	int A[] = {0,1};
+    merge_sort(A, 0, sizeof(A)/sizeof(int));
 	
 	// printing array A[] 
-	for (int i=0; i<5; i++){
+	for (int i=0; i<sizeof(A)/sizeof(int); i++){
 		cout<<A[i]<<" ";
 	}
 	cout<<"\nComparisons: "<<comparisons<<endl;
