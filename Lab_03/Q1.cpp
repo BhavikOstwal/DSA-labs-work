@@ -81,9 +81,7 @@ public:
         {
             return false;
         }
-        
     }
-
     ~Stacks_via_LL(){}
 };
 
@@ -123,14 +121,18 @@ void legal_move(Stacks_via_LL& A, Stacks_via_LL& B, char src, char dest)
     }
 }
 
+void swapStacks(Stacks_via_LL& stack1, Stacks_via_LL& stack2) {
+    Stacks_via_LL tmp = stack1;
+    stack1 = stack2;
+    stack2 = tmp;
+}
+
 
 void Solve_TOH(Stacks_via_LL& S, Stacks_via_LL& A, Stacks_via_LL& D, int n)
 {
     if (n%2==0)
-    { 
-        Stacks_via_LL tmp = A;
-        A = D;
-        D = tmp;
+    {
+        swapStacks(A, D);
     }
 
     for (int i = 1; i <= (1 << n)-1; i++)
