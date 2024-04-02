@@ -8,7 +8,6 @@ class BT
     int lst_ind = -1;
 
 public:
-
     void set_root(int key)
     {
         arr[0]=key;

@@ -129,8 +129,7 @@ public:
             Inorder_trav(rot->left);
             cout << rot->data << " ";
             Inorder_trav(rot->right);
-        }
-        
+        }        
     }
         
     Node* Root()
