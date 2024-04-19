@@ -1,24 +1,23 @@
 #include<iostream>
 using namespace std;
 
-class child_arr
+#define n 20
+
+class Node
 {
 public:
-    int data[10];
-    child_arr* child_ptr;
-    int* parent;
-    int next_ind = 0;
+    int data;
+    Node* children_arr[n];
 
-    child_arr(int mydata)
-    {
-        data[0] = mydata;
-        next_ind++;
+    Node(int mydata){
+        data = mydata;
     }
 };
 
+
 class Branch_Tree
 {
-    child_arr* root;
+    Node* root;
 
 public:
     Branch_Tree()
@@ -26,7 +25,7 @@ public:
         root = nullptr;
     }
 
-    void Insert_at_level()
+    void Insert_at_level(int mydata, )
     {
                 
     }
