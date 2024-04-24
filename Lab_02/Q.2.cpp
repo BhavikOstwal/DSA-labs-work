@@ -29,7 +29,6 @@ void merge(int A[], int p, int q, int r){
 }
 
 void merge_sort(int A[], int p, int r){
-	comparisons++;
 	if (p<r){
 		int q = p + (r-p)/2;	
 		merge_sort(A, p, q);
@@ -39,8 +38,8 @@ void merge_sort(int A[], int p, int r){
 }
 
 int main(){
-	int A[] = {0,1};
-    merge_sort(A, 0, sizeof(A)/sizeof(int));
+	int A[] = {0,1,4,2};
+    merge_sort(A, 0, sizeof(A)/sizeof(int)-1);
 	
 	// printing array A[] 
 	for (int i=0; i<sizeof(A)/sizeof(int); i++){
