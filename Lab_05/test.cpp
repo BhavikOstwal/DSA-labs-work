@@ -116,7 +116,7 @@ public:
     {
         if (A[index]>=new_key)
         {
-            cout << "New key is smaller" << endl;
+            cout << "smaller" << endl;
         }
         else
         {
@@ -129,43 +129,9 @@ public:
             }
         }
     }
-
-    void Insert_key(int A[], int new_key)
-    {
-        heap_size++;
-        A[heap_size-1] = numeric_limits<int>::min();
-        Increase_key(A, heap_size-1, new_key);
-    }
 };
 
 int main() {
-    // int A[] = {16,4,10,14,7,9,3,2,8,1};
-    // int n = 16;
-    int arr[] = {3,4,1,3,2,16,9,10,14,8,7};
-    // int arr[] = {4,1,3};
-    int size = sizeof(arr)/ sizeof(int);
-    // int size = n;
-
-    Heap myHeap(size);
-    // myHeap.Build_max_heap(arr);
-    // myHeap.print_arr(arr);
-    // myHeap.print_heap(arr);
-    // myHeap.Print_Max(arr);
-    // cout << myHeap.Extract_Max(arr) << endl;
-    // myHeap.print_arr(arr);
-    // myHeap.print_heap(arr);
-
-    // myHeap.Increase_key(arr, 3, 15);
-    // myHeap.print_heap(arr);
-
-    // myHeap.Insert_key(arr, 11);
-    // myHeap.print_heap(arr);
-
-    // cout << size << endl;
-
-    myHeap.HeapSort(arr);
-    // myHeap.Build_max_heap(arr);
-    // myHeap.print_heap(arr);
     
     return 0;
 }
